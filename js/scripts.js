@@ -38,6 +38,6 @@ function showCountriesList2(resp) {
 function showCountriesList2(resp) {
     countriesList2.empty();
     resp.forEach(function(item) {
-           	$('<li>').text(item.name).appendTo(countriesList2);
+           	$('<li>').text(item.name + " - capital is " + item.capital).appendTo(countriesList2);
     });
 }
